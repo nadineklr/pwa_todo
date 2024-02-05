@@ -1,0 +1,236 @@
+/* Fonts */
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/poppins-v20-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/poppins-v20-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/poppins-v20-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/open-sans-v40-latin-regular.woff2") format("woff2");
+}
+
+:root {
+  --normalFontSize: 1.1rem;
+  --white: #fff;
+  --gray: #ddd;
+  --black: #333;
+}
+/*  reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* *** */
+.no-display {
+  display: none;
+}
+
+/* Base Styling */
+body {
+  background: linear-gradient(#4295f8ff, #5c98f0ff, #5577f3ff, #6062efff, #7042e9ff);
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  font-size: 1.1rem;
+  padding-bottom: 1.3rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--normalFontSize);
+  color: #333;
+  font-size: 1.2rem;
+}
+
+input {
+  margin: 5px 0;
+}
+
+.container {
+  padding: 1rem;
+}
+
+/* Form Style */
+form#todo-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-form label {
+  font-family: "Poppins";
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+#todo-form input {
+  height: 40px;
+  font-size: var(--normalFontSize);
+  font-family: "Open Sans", sans-serif;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: var(--white);
+  border: none;
+  border-radius: 2px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/*  Error Message */
+.error-message {
+  padding: 10px;
+  border-radius: 2px;
+  background-color: rgb(255, 186, 186);
+}
+
+.error-message p {
+  color: rgb(121, 0, 0);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/*  Todo List Display */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.todo-item {
+  display: flex;
+  padding: 15px;
+  background: var(--white);
+  border-radius: 5px;
+  justify-content: space-between;
+  color: #333;
+  box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.313);
+  margin: 5px 0;
+}
+
+.todo-item p {
+  columns: #333;
+}
+
+.todo-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item button {
+  background-image: url(icons/bin.svg);
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  padding: 0;
+  background-position: center;
+}
+
+.todo-item button:hover {
+  cursor: pointer;
+}
+
+/* Checkbox */
+.todo-list-check label {
+  display: none;
+}
+.todo-list-check input {
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+/*  Placeholder */
+.todo-list-placeholder {
+  background: var(--white);
+  box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.313);
+  padding: 50px 10px;
+  border-radius: 5px;
+}
+
+.todo-list-placeholder h3 {
+  color: #222;
+  text-align: center;
+  padding: 10px;
+}
+
+.todo-list-placeholder p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}

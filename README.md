@@ -5,7 +5,7 @@ In this codebase you find a todo app that is created as a PWA. It was created wi
 - The app works offline once installed
 - Todos can be added, checked and deleted and are stored in the cache
 
-:collision: Find more infromation on PWA and how you can create your own in [my e-learning course on Medium.](https://medium.com/@nadineklr/pwa-essentials-revolutioniere-deine-webanwendungen-mit-progressive-web-app-development-b9c654d14917)
+:collision: Find more information on PWA and how you can create your own in [my e-learning course on Medium.](https://medium.com/@nadineklr/pwa-essentials-revolutioniere-deine-webanwendungen-mit-progressive-web-app-development-b9c654d14917)
 
 ### Important side notes
 

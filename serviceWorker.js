@@ -5,6 +5,7 @@ const precachedResources = [
   "js/main.js",
   "js/form.js",
   "manifest.json",
+  "icons/bin.svg",
   "icons/manifest-icon-192.maskable.png",
   "icons/manifest-icon-512.maskable.png",
   "fonts/open-sans-v40-latin-regular.woff2",

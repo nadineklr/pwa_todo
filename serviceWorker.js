@@ -1,11 +1,13 @@
 // prepare caching
 const cacheName = "todoAppCache-1"; // name cache version to check if cache update works
 const precachedResources = [
+  "./",
   "index.html",
   "js/main.js",
   "js/form.js",
   "manifest.json",
   "icons/bin.svg",
+  "icons/icon.png",
   "icons/manifest-icon-192.maskable.png",
   "icons/manifest-icon-512.maskable.png",
   "fonts/open-sans-v40-latin-regular.woff2",

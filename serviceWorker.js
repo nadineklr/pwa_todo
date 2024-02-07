@@ -2,9 +2,12 @@
 const cacheName = "todoAppCache-1"; // name cache version to check if cache update works
 const precachedResources = [
   "./",
-  "index.html",
+  "index.php",
+  "notes.php",
   "js/main.js",
   "js/form.js",
+  "js/notes.js",
+  "style.css",
   "manifest.json",
   "icons/bin.svg",
   "icons/icon.png",

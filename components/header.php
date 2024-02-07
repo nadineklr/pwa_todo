@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- important meta tag for pwa -->
@@ -44,46 +42,4 @@
     <link rel="apple-touch-startup-image" href="icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
     <link rel="apple-touch-startup-image" href="icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
     <link rel="apple-touch-startup-image" href="icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
-  </head>
-
-  <body>
-    <header>
-      <div class="container">
-        <h1>PWA<br />To Do List</h1>
-      </div>
-
-      <div class="container">
-        <div class="box add-new">
-          <form action="" id="todo-form">
-            <div class="form-item">
-              <label for="todo_name">Enter your task</label>
-              <input type="text" name="todo_name" value="" id="todo_name" />
-              <div class="error-message no-display">
-                <p>The input field is empty. Fill in your task to add it to the todo list.</p>
-              </div>
-            </div>
-
-            <div class="form-item">
-              <input type="submit" value="Save" name="submit" />
-            </div>
-          </form>
-        </div>
-        <!--  Display Todos -->
-        <div class="box todo-list">
-          <h2>To do</h2>
-          <div class="todos-box">
-            <!-- Todos will be displayed here -->
-
-            <!-- Placehoder -->
-          </div>
-          <div class="todo-list-placeholder">
-            <h3>You have not listed your todos yet.</h3>
-            <p>Get started and get them done!</p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <script src="js/main.js"></script>
-    <script src="js/form.js"></script>
-  </body>
-</html>
+</head>

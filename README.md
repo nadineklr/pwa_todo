@@ -41,6 +41,10 @@ With an event listener the tasks can be checked with the checkbox and marked as 
 
 The user can delete todo items with the button and the todoList will be updated. Also this information will then be updated with the new todoList array in the cache.
 
+### Subpage Notes
+
+Here you can add some notes which are automatically stored in the cache after input.
+
 # Setup
 
 You can easily setup the PWA on your own server. It works with https or http on your local server like XAMPP or MAMP.
@@ -51,12 +55,14 @@ A few words to testing the PWA on your devices:
 
 The Chrome browser with its dev tools is a very useful and easy way to test, for example, if the service worker was registered, installed and activated. You can check the cache or directly inspect the service worker with the 'Application' tab. Lighthouse also offers testing, especially designed for PWAs to check if the requirements for installation were fulfilled.
 
+You can check the app through the Chrome browser and activate "offline" in the Application tab to check offline stability. Also you can istall it on your device and turn off the local server and see it still working fine.
+
 Also in Firefox you can see the staus of the service worker in the dev tools under the application tab and inspect data in the cache.
 
 As you see in the main.js a console.log gets executed to check if the service worker was registered and give you a direct feedback on the service worker status and scope.
 
 For Safari, make sure Develop menu is activated in your settings to be able to check the console. If you are working on OS, you can install the iOS Simulator which is part of XCode to simulate iOS Devices.
 
-Keep in mind that on iOS caching behaviour is different in the browser than when the app is installed. Install the app and you will see it working fine. If the app is closed in the background on mobile, the cache gets deleted and data is lost.
+Keep in mind that on iOS caching behaviour is different in the browser than when the app is installed. If the app is closed in the background on mobile, the cache gets deleted and data is lost. Depending on your device and its settings cache and service worker might behave different from testing on desktop.
 
 For first level support, if you face any problems with the PWA, first empty the browser cache and check again. Especially when altering the code and reloading, older cached data can lead to issues with the new code version.

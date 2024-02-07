@@ -39,7 +39,7 @@ todoForm.addEventListener("submit", function (e) {
 
   // check for form data
   const formData = new FormData(todoForm);
-  console.log(formData);
+  // console.log(formData);
 
   if (isFormDataEmpty(formData)) {
     // Display error message
@@ -61,7 +61,7 @@ todoForm.addEventListener("submit", function (e) {
   });
 
   // Log the form data
-  console.log(formObject);
+  // console.log(formObject);
   // add new object to list
   todoList.push(formObject);
 
@@ -135,9 +135,11 @@ function addToList(todoArray) {
 
   checkbox.forEach((item, index) => {
     item.addEventListener("change", function () {
-      if (this.checked) { // todo marked as done
+      if (this.checked) {
+        // todo marked as done
         todoList[index].status = this.checked;
-      } else { // todo marked as undone
+      } else {
+        // todo marked as undone
         todoList[index].status = false;
       }
 
